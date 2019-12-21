@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
     return <header>
-        <h1> My project </h1>
+        <h1> Final Project </h1>
     </header>
 }
 
