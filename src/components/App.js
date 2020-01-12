@@ -6,8 +6,11 @@ import Note from './Note'
 function App() {
     return <div>
         <Header/>
-        <Note />
-        <Footer/>
+        <Note
+        title="This is the note title"
+        content="This is the note content"
+         />
+        <Footer/> 
     </div>
 }
 
