@@ -4,8 +4,8 @@ import Footer from './Footer';
 import Note from './Note';
 import notes from '../notes';
 
-function createNotes (noteItem) {
-    <Note
+function createNotes(noteItem) {
+    return <Note
         title= {noteItem.title}
         content={noteItem.content}
     />
@@ -14,7 +14,7 @@ function createNotes (noteItem) {
 function App() {
     return <div>
         <Header/>
-        notes.map();
+        {notes.map(createNotes)};
         <Footer/> 
     </div>
 }
