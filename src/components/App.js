@@ -4,12 +4,24 @@ import Footer from './Footer';
 import Note from './Note';
 import notes from '../notes';
 import CreateArea from './CreateArea';
+import { useState } from 'react';
 
 
 function App() {
-    function addNote(note) {
-        console.log(note);
-    }
+   const [notes, setNotes] = useState([]);
+
+   function addNote(newNote) {
+       setNotes(prevNotes => {
+            return [...prevNotes, newNote];
+       });
+   }
+   function deleteNote(id) {
+       setNotes(prevNotes => {
+        return prevNotes.fillter((noteItem, index) => {
+            return index !== id;
+        })
+       });
+   }
 }
 
 return (

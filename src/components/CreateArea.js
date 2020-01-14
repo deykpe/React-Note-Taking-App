@@ -37,6 +37,6 @@ function CreateArea (props) {
         </form>
     </div>
     );
-}; 
+}
 
 export default CreateArea;
